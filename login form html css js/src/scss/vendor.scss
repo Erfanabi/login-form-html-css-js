@@ -1,0 +1,21 @@
+// تغییر در هسته های اولیه بوتسترپ
+@import 'core/variables';
+
+// font
+@import 'component/font';
+
+
+// import bootstrap
+@import "../vendor/bootstrap-5.3.0/scss/bootstrap.scss";
+
+
+
+// import font-awesome Library
+$fa-font-path: "../../assets/fonts/font-awesome";
+
+// importing core styling file
+@import "../vendor/fontawesome-6.4.0/scss/fontawesome.scss";
+
+// our project needs Solid + Brands
+@import "../vendor/fontawesome-6.4.0/scss/solid.scss";
+@import "../vendor/fontawesome-6.4.0/scss/brands.scss";

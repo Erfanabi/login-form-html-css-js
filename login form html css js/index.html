@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="images/x-icon" href="assets/images/icons/favicon.ico"/>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- import bootstarp -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/vendor.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <div class="cord">
+            <div class="cord-body">
+
+                <h1 class="fw-bold text-center">Login</h1>
+
+                <div class="form-cont">
+                    <div class="username">
+                        <label for="input-1" class="form-label d-block">Username</label>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class='bx bxs-user hov'></i>
+                                <input type="email" class="mb-2" id="input-1" placeholder="Type your username">
+                            </div>
+
+                            <div>
+                                <i class='bx bx-check check d-none' id="green"></i>
+                                <i class='bx bx-x mult d-none' id="red"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="password mt-4">
+                        <label for="input-2" class="form-label d-block">Password</label>
+                        <div class="d-flex justify-content-between">
+                            <div class="w-90">
+                                <i class='bx bxs-lock-alt hov'></i>
+                                <input type="password" class="mb-2 pass w-90" id="input-2"
+                                    placeholder="Type your username">
+                            </div>
+
+                            <div>
+                                <i class='bx bx-show show text-secondary' id="show"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="password mt-4">
+                        <label for="input-3" class="form-label d-block">Reapt Password</label>
+                        <div class="d-flex justify-content-between">
+                            <div class="w-90">
+                                <i class='bx bxs-lock-alt hov'></i>
+                                <input type="password" class="mb-2 pass w-90" id="input-3"
+                                    placeholder="Type your username">
+                            </div>
+
+                            <div>
+                                <i class='bx bx-show show text-secondary' id="show"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="pass-same text-start mt-1 mb-0 fw-medium"></p>
+                    <p class="pass-state text-end mt-1 mb-0 fw-medium"></p>
+                </div>
+
+                <div class="progress bac-gra mt-3">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- <p class="mt-2 text-secondary text-start">Forgot password?</p> -->
+
+                
+                <div class="wrapper">
+                    <button class="bttn">Create account</button>
+                </div>
+
+                <p class="mt-2 text-secondary fw-medium text-center mt-5">Or Sign Up Using</p>
+
+
+                <div class="social-link">
+
+                    <i class='bx bxl-facebook bg-info'></i>
+                    <i class='bx bxl-twitter bg-primary'></i>
+                    <i class='bx bxl-google-plus bg-danger'></i>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="assets/scripts/checkEmail.js"></script>
+    <script src="assets/scripts/showPassword.js"></script>
+</body>
+
+</html>

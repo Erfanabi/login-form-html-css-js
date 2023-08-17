@@ -1,0 +1,211 @@
+body {
+    background-image: url(../../assets/images/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cord {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    width: 500px;
+    // height: 90vh;
+    background: #fff;
+    border-radius: 10px;
+
+    padding: 40px 20px;
+}
+
+h1 {
+    margin-bottom: 50px !important;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+
+.cord-body {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+.username,
+.password {
+    border-bottom: 1px solid #d9d9d9;
+    transition: all 500ms;
+
+    .hov {
+        color: #adadad;
+        transition: all 500ms;
+    }
+
+
+}
+
+.bac-gra {
+    // background-color: #a64bf4 !important;
+    background: linear-gradient(to right, #00dbde, #fc00ff) !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.color-red {
+    background-color: red !important;
+}
+
+.color-orange {
+    background-color: orange !important;
+}
+
+.color-green {
+    background-color: green !important;
+}
+
+.check {
+    color: rgb(17, 207, 17) !important;
+    font-size: 25px !important;
+}
+
+.mult {
+    color: red !important;
+    font-size: 25px !important;
+}
+
+.show {
+    font-size: 22px !important;
+    cursor: pointer;
+}
+
+.username:focus-within,
+.password:focus-within {
+    border-bottom-color: #545454 !important;
+}
+
+.username:focus-within .hov,
+.password:focus-within .hov {
+    color: #a64bf4 !important;
+}
+
+
+input::placeholder {
+    color: #adadad !important;
+    font-weight: 500;
+}
+
+.wrapper {
+    position: relative;
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    border-radius: 30px;
+}
+
+.wrapper:after {
+    content: "Create account";
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 30px;
+    transition: opacity 0.5s;
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+
+    color: #fff;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper:hover:after {
+    opacity: 1;
+}
+
+
+.bttn {
+    background-color: transparent;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: linear-gradient(to right, #00dbde, #fc00ff);
+    // transition: all 1s;
+
+    // -webkit-transition: all 0.4s;
+    // -o-transition: all 0.4s;
+    // -moz-transition: all 0.4s;
+    // transition: all 0.4s;
+
+    // &:hover {
+    //     background: linear-gradient(to right, #fc00ff, #00dbde);
+    // }
+}
+
+
+.social-link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        color: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+
+        &:hover {
+            background-color: black !important;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:530px) {
+    .cord {
+
+        width: 90%;
+    }
+
+    .cord-body {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+}
